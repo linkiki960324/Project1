@@ -1,1 +1,67 @@
 
+/* ==============================
+   台中第二市場｜互動與元件效果
+============================== */
+
+/* 卡片效果 */
+.info-card,
+.food-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-card:hover,
+.food-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 14px 30px rgba(53, 65, 48, 0.16);
+}
+
+/* 卡片圖片效果 */
+.info-card img,
+.food-card img {
+    transition: transform 0.4s ease;
+}
+
+.info-card:hover img,
+.food-card:hover img {
+    transform: scale(1.03);
+}
+
+/* 按鈕效果 */
+.button {
+    transition: background-color 0.25s ease, transform 0.25s ease;
+}
+
+/* 導覽列效果 */
+.main-nav a {
+    transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+/* 一般連結效果 */
+.card-content a {
+    transition: color 0.25s ease;
+}
+
+.card-content a:hover {
+    color: var(--color-brown);
+}
+
+/* 圖片基本設定 */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* 鍵盤操作時的焦點提示 */
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid var(--color-brown);
+    outline-offset: 4px;
+}
+
+/* 讓圖片載入時不超出卡片 */
+.info-card,
+.food-card {
+    overflow: hidden;
+}
+
